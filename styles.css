@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  #game-container, #suspects-page, #end-screen {
+    background: linear-gradient(135deg, #2e2e4f, #121212);
+    border: 3px solid #ffcc00;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px #000000;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #ffcc00;
+    color: #1e1e2f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffd633;
+    color: #000;
+    box-shadow: 0px 0px 5px #ffffff;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Timer and Score Info */
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  .info p span {
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  
+  /* Suspects Page */
+  #suspects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  #suspects-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .suspect {
+    background-color: #2e2e4f;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;  /* Make each suspect take up full width of their grid cell */
+    text-align: left;
+    box-shadow: 0px 0px 10px #000000;
+  }
+  
+  .suspect h4 {
+    margin-top: 0;
+    color: #ffcc00;
+  }
+  
+  .suspect p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .suspect button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* End Screen */
+  #end-screen {
+    font-size: 18px;
+  }
+  
+  #end-message {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  
